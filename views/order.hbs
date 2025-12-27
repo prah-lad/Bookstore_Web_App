@@ -1,0 +1,33 @@
+<form method="post" action="/order">
+
+  <!-- Book dropdown -->
+  <label for="isbn">Select a Book</label>
+  <select id="isbn" name="isbn">
+    <!-- Static first option -->
+    <option value="none">Select a Book</option>
+
+    <!-- Dynamic options from books array -->
+    {{#each books}}
+      <option value="{{isbn}}">{{title}}</option>
+    {{/each}}
+  </select>
+
+  {{#if bookError}}
+    <span class="field-error">{{bookError}}</span>
+  {{/if}}
+
+  <br><br>
+
+  <!-- Copies textbox -->
+  <label for="copies">Copies:</label>
+  <input type="text" id="copies" name="copies" value="{{copies}}">
+
+  {{#if copiesError}}
+    <span class="field-error">{{copiesError}}</span>
+  {{/if}}
+
+  <br><br>
+
+  <button type="submit">Place Order</button>
+</form>
+

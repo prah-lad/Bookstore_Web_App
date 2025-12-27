@@ -1,0 +1,23 @@
+{
+  "name": "assignment2-book-order",
+  "version": "1.0.0",
+  "description": "Assignment 2 - Node/Express form handling, validation, and model functions for books by Stefan Bachmann.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "express",
+    "node",
+    "form-handling",
+    "validation",
+    "assignment2"
+  ],
+  "author": "Stefan Bachmann",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3"
+  }
+}

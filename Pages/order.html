@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Book Order Form</title>
+    <style>
+      body { font-family: Georgia, "Times New Roman", serif; margin: 30px; }
+      h1 { font-size: 22px; margin: 0 0 12px 0; }
+      .row {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        margin-bottom: 12px;
+      }
+      label { white-space: nowrap; }
+      select { min-width: 220px; }
+      input[type="text"] { width: 80px; }
+      em { display: block; margin-top: 16px; }
+    </style>
+  </head>
+  <body>
+    <h1>Books by Stefan Bachmann</h1>
+
+    <form action="/order" method="post">
+      <div class="row">
+        <label for="isbn">Select a Book</label>
+        <select id="isbn" name="isbn">
+          <option value="none">Select a Book</option>
+          <option value="9780062209954">The Peculiar</option>
+          <option value="9780062209978">The Whatnot</option>
+          <option value="9780062851290">Cinders &amp; Sparrows</option>
+        </select>
+
+        <label for="copies">Copies:</label>
+        <input type="text" id="copies" name="copies" />
+      </div>
+
+      <button type="submit">Purchase</button>
+    </form>
+
+    <em>Copyright Prahlad Regmi</em>
+  </body>
+</html>
+

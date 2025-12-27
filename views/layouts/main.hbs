@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Books by Stefan Bachmann</title>
+  <style>
+  body {
+    /* match professor’s serif look */
+    font-family: "Times New Roman", Times, serif;
+  }
+
+  .box {
+    border: 1px solid #6683b5;
+    width: 500px;
+    padding: 10px;
+    margin: 20px;
+  }
+
+  nav a {
+    margin-right: 10px;
+    text-decoration: underline;
+    color: #4b0082;
+  }
+
+  footer {
+    margin-top: 40px;
+    font-style: italic;
+  }
+
+  .field-error {
+    display: block;            
+    font-style: italic;
+    font-size: 0.9em;
+    margin-top: 2px;
+  }
+  
+  
+</style>
+
+</head>
+<body>
+
+  <div class="box">
+    <!-- TOP: Author name -->
+    <h1>Books by <em>Stefan Bachmann</em></h1>
+
+    <!-- NAV BAR -->
+    <nav>
+      <a href="/books">View Books</a>
+      <a href="/order">Order Books</a>
+    </nav>
+
+    <!-- PAGE CONTENT WILL BE INJECTED HERE -->
+    {{{body}}}
+
+    <!-- BOTTOM: Your name -->
+    <footer>
+      Copyright <em>Prahlad Regmi</em>
+    </footer>
+  </div>
+
+</body>
+</html>
+

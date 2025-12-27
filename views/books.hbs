@@ -1,0 +1,21 @@
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Price</th>
+      <th>Cover</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each books}}
+      <tr>
+        <td>{{title}}</td>
+        <td>${{price}}</td>
+        <td>
+          <img src="/images/{{image}}" alt="{{title}} cover" width="120">
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
+
